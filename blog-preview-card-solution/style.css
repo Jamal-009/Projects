@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Figtree", sans-serif;
+}
+
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+
+    --White: hsl(0, 0%, 100%);
+
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+}
+
+body{
+    background-color: var(--Yellow);
+}
+
+.box{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: var(--White);
+    width: 384px;
+    height: 522px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 8px 8px rgb(0, 0, 0);
+}
+
+.hero img{
+    width: 336px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 24px;
+}
+
+.main{
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 336px;
+    height: 194px;
+    /* background-color: green; */
+}
+
+.main .btn{
+    color: var(--Gray-950);
+    background-color: var(--Yellow);
+    display: inline;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 150%;
+    letter-spacing: 0px;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+.main .date{
+    color: var(--Gray-950);
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 12px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.main .foundation{
+    color: var(--Gray-950);
+    margin-top: 12px;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all ease-in-out .2s;
+}
+
+.main .foundation:hover{
+    color: var(--Yellow);
+}
+
+.main .para{
+    color: var(--Gray-500);
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: 500;
+}
+
+.avater{
+    margin-left: 24px;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.avater img{
+    width: 32px;
+    height: 32px;
+}
+
+.avater .name{
+    color: var(--Gray-950);
+    margin-left: 12px;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 376px) {
+    .container {
+        width: 327px;
+        height: 501px;
+        padding: 24px;
+    }
+
+    .hero img {
+        width: 279px;
+        height: 200px;
+        margin: 24px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .main{
+        width: 279px;
+        height: 173px;
+        margin: 0px;
+    }
+
+    .main .btn{
+        font-size: 12px;
+    }
+
+    .main .date{
+        font-size: 12px;
+    }
+
+    .main .foundation{
+        font-size: 22px;
+    }
+
+    .main .para{
+        font-size: 14px;
+    }
+
+    .avater{
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+}
